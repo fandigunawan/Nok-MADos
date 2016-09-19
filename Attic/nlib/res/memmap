@@ -1,0 +1,8 @@
+MEMORY {
+   ram(RWXAIL) : ORIGIN = 0x0, LENGTH = 64K
+}
+
+SECTIONS {
+   /* put crt0 at the beginning */
+   BOOT : { crt0.o } >ram
+}

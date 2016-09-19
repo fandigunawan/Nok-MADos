@@ -1,0 +1,28 @@
+MADos Arcanoid (in menu - MArcanoid)
+Based on a C++ source written by Safronov Pavel found on http://www.progc.narod.ru
+
+Known bugs:
+- if the ball was directly punched too near from right or left wall it can start moving only around that wall. (occasional)
+
+Todo:
+- Fix bugs :)
+- make that the ball reacts with cubes like a one big point. now it is reacting only with a point in the higher left corner.
+- Some new levels (up to 40) (4 levels design is done, just to program)
+- Bonuses: additional life, closed barrier, stone ball, big ball, glue, 2x and 3x length
+- Handicaps: Block, invert screen, undo bonuses, 2x speed up
+
+- implement difficulty level through timer ?
+- optimize to take less space ?
+
+Log:
+16.05.2004	-	Added 1 level, menu for its selection, written rules for levels
+
+15.05.2004 - 	Added vibrating in game, 
+		created menu with skills, 
+		implemented difficulty level thru pause delays. - try to win on hard with charger connected :)
+
+28.04.2004	- 	Added vibrating func, 
+		exits game when 'C' is pressed - at last!
+		Bug with ball not colliding cubes solved
+
+kraze1984

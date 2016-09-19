@@ -1,0 +1,36 @@
+OUTPUT_FORMAT("elf32-littlearm", "elf32-bigarm", "elf32-littlearm")
+OUTPUT_ARCH(arm)
+ENTRY(_start)
+
+
+MEMORY
+{
+    rom(RX) : ORIGIN = 0x00200000, LENGTH = 2048K 
+    ram(RWXAIL) : ORIGIN = 0x00100040, LENGTH = 64K
+}
+
+SECTIONS
+{
+    ROM : { crt0.o } > rom
+    .text :
+	{
+	    *(.text)
+	} 
+    .rodata :
+	{
+	    *(.rodata.*)
+	} 
+    .data :
+    AT ( ADDR(.text) + SIZEOF( .text ) + SIZEOF( .rodata ) )
+	{
+	    _sdata = ADDR(.text) + SIZEOF( .text ) + SIZEOF( .rodata );
+	    PROVIDE (_sdata = .);
+	    *(.data) 
+	    *(.data.*) 
+	    *(.gnu.linkonce.*)
+	    SORT(CONSTRUCTORS)
+	} > ram
+
+}
+
+

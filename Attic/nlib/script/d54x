@@ -1,0 +1,4 @@
+#!/bin/bash
+# d54x <file> <offset>
+tic54x-objdump -b binary -m tic54x --adjust-vma $2 -D $1
+

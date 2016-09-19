@@ -1,0 +1,29 @@
+this should be a list of all known bugs in MADos,
+if you fix a bug or find a new one, you can change or
+let change this list!
+
+
+known, not fixed bugs:
+
+- hang at 4063 sec 
+  * krisha thinks it's because auf FIQ5, counts up to ~130 until hang
+  * g3gg0: FIQ5 count == 131, then lockup. after 5 secs ccont reset
+- menu key presses lags and are not recognized fully
+- long scrolling menu names need many keys to get rid of them
+- right menubar has sometimes display errors
+- menu position cursor (right, menubar) could be in variable size (like in UserInterface)
+- bomberman not included, because of many bugs ;)
+- embed mode: should maybe capture nokia time and save it, so no time will be lost when going back to nokia
+- flickering fade in lights
+- dropdown menu entrys that are too long, if the list is too long there will also be some displaying errors
+- enigne3D buggy
+- picpaint not complete
+- MADos (standalone) don't start up with a const unsigned char header file included in main.c
+- define fixed huffman tables for some types (bitmap, text) to increase filesize saving
+- ...
+
+
+fixed bugs:
+
+- snakeIII couldn't be restartet, if abortet with C (maybe malloc helps) ::: was a little variable bug, no malloc ;)
+- demo_1 should be stopped on keypress

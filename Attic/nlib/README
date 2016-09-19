@@ -1,0 +1,4 @@
+Edit makefile.cfg
+
+'make' then creates test/test.bin, which you can send to your phone
+with wmx-sendcode

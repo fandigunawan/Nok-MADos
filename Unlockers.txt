@@ -1,0 +1,32 @@
+unlockers pack
+/*
+    Unlockers\Nokia\DCT-2\ IMEI, GID1, GID2, IMSI, Unlock Code, Sec. Code
+    Unlockers\Sony\CMD C1\ IMEI, Calc
+    Unlockers\Vitel\TSM 3/4/5\ IMEI, Calc
+*/
+==============
+
+MADos conversion by kraze1984
+
+ASKNOWLEDGEMENTS:
+Those sourcecodes were posted on nokiafree or 
+their location was indicated there.
+
+Vitel TSM 3/4/5 (not 5m)- indear;
+Nokia DCT-2 - Pascal code by Zulea, C conversion by indear;
+Nokia DCT-2 Sec. Code - Source Code von andreas@ccc.de;
+Sony CMD C1 - SIMUNLOCK by S.S. v1.0
+
+PROBLEMS:
+In output before the normal text all give the latin alphabet (my problem).
+There are some strange things in showing gid1\gid2 in dct2 unlocker.
+
+TODO:
+IMSI reading from card inputted in phone.
+
+THE UNLOCKERS WERE NOT TESTED!!!!
+
+===============
+29.10.2004
+
+

@@ -1,0 +1,31 @@
+
+g3gg0/nokia/dspx.bin:     file format binary
+
+Disassembly of section .data:
+
+00000f00 <.data>:
+ f00:	7706 	stm    #0,st0
+ f01:	0000 
+ f02:	7707 	stm    #26880,st1
+ f03:	6900 
+ f04:	771d 	stm    #-88,pmst
+ f05:	ffa8 
+ f06:	7718 	stm    #121,sp
+ f07:	0079 
+ f08:	7728 	stm    #8192,swwsr
+ f09:	2000 
+ f0a:	7758 	stm    #12614,clkmd
+ f0b:	3146 
+ f0c:	f070 	rpt    #60000
+ f0d:	ea60 
+ f0e:	f495 	nop    
+ f0f:	7713 	stm    #-256,ar3
+ f10:	ff00 
+ f11:	7712 	stm    #2048,ar2
+ f12:	0800 
+ f13:	ecff 	rpt    #255
+ f14:	e598 	mvdd   *ar3+,*ar2+
+ f15:	f7bd 	ssbx   st1,xf
+ f16:	f6bd 	rsbx   st1,xf
+ f17:	f073 	b      0xf15
+ f18:	0f15 

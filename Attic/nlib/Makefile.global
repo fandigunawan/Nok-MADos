@@ -1,0 +1,9 @@
+#TOPDIR := $(shell pwd)
+SCRIPT := $(TOPDIR)/script
+HALFWORDIFY := $(SCRIPT)/halfwordify.py
+
+CFLAGS = -O2 -mthumb -mbig-endian -I$(TOPDIR)/include -EB
+CFLAGS_LINK = $(CFLAGS) -L$(TOPDIR)/src -nodefaultlibs -nostartfiles -Xlinker $(MEMMAP)
+MEMMAP = $(TOPDIR)/res/memmap
+
+include $(TOPDIR)/Makefile.cfg
